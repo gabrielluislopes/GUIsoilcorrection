@@ -36,7 +36,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Correção de Solo");
         setForeground(new java.awt.Color(0, 0, 0));
+        setMaximumSize(new java.awt.Dimension(1024, 768));
+        setMinimumSize(new java.awt.Dimension(1024, 768));
         setPreferredSize(new java.awt.Dimension(1024, 768));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         btFosforo.setBackground(new java.awt.Color(152, 197, 255));
@@ -58,6 +61,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButton1.setText("Correção Cálcio e Magnésio");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.setPreferredSize(new java.awt.Dimension(300, 100));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1);
         jButton1.setBounds(140, 270, 300, 100);
 
@@ -108,6 +116,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         CorrecaoPotassio cp = new CorrecaoPotassio();
         cp.setVisible(true);
     }//GEN-LAST:event_btPotassioActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        CorrecaoCalcioMagnesio ccm = new CorrecaoCalcioMagnesio();
+        ccm.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
