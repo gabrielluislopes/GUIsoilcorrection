@@ -26,82 +26,78 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btCalcioMagnesio = new javax.swing.JButton();
         btFosforo = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         btPotassio = new javax.swing.JButton();
         btValoresIdeais = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        rtTitulo = new javax.swing.JLabel();
+        rtFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Correção de Solo");
-        setBackground(new java.awt.Color(0, 204, 204));
         setForeground(new java.awt.Color(0, 0, 0));
         setPreferredSize(new java.awt.Dimension(1024, 768));
+        getContentPane().setLayout(null);
 
-        btCalcioMagnesio.setBackground(new java.awt.Color(255, 255, 255));
-        btCalcioMagnesio.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        btCalcioMagnesio.setForeground(new java.awt.Color(0, 0, 0));
-        btCalcioMagnesio.setText("Correção Cálcio e Magnésio");
-
-        btFosforo.setBackground(new java.awt.Color(255, 255, 255));
-        btFosforo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        btFosforo.setBackground(new java.awt.Color(152, 197, 255));
+        btFosforo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btFosforo.setForeground(new java.awt.Color(0, 0, 0));
         btFosforo.setText("Correção Fósforo");
+        btFosforo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btFosforo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btFosforoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btFosforo);
+        btFosforo.setBounds(587, 273, 300, 100);
 
-        btPotassio.setBackground(new java.awt.Color(255, 255, 255));
-        btPotassio.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton1.setBackground(new java.awt.Color(152, 197, 255));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setText("Correção Cálcio e Magnésio");
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton1.setPreferredSize(new java.awt.Dimension(300, 100));
+        getContentPane().add(jButton1);
+        jButton1.setBounds(140, 270, 300, 100);
+
+        btPotassio.setBackground(new java.awt.Color(152, 197, 255));
+        btPotassio.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btPotassio.setForeground(new java.awt.Color(0, 0, 0));
         btPotassio.setText("Correção Potássio");
+        btPotassio.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(btPotassio);
+        btPotassio.setBounds(137, 473, 300, 100);
 
-        btValoresIdeais.setBackground(new java.awt.Color(255, 255, 255));
-        btValoresIdeais.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        btValoresIdeais.setBackground(new java.awt.Color(152, 197, 255));
+        btValoresIdeais.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btValoresIdeais.setForeground(new java.awt.Color(0, 0, 0));
         btValoresIdeais.setText("Valores Ideais");
+        btValoresIdeais.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(btValoresIdeais);
+        btValoresIdeais.setBounds(587, 473, 300, 100);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Correção de Solo");
-        jLabel1.setPreferredSize(new java.awt.Dimension(400, 100));
+        rtTitulo.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        rtTitulo.setForeground(new java.awt.Color(0, 0, 0));
+        rtTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        rtTitulo.setText("Correção de Solo");
+        rtTitulo.setPreferredSize(new java.awt.Dimension(400, 100));
+        getContentPane().add(rtTitulo);
+        rtTitulo.setBounds(312, 59, 400, 100);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(137, 137, 137)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btCalcioMagnesio, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btPotassio, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(150, 150, 150)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btValoresIdeais, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btFosforo, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(312, 312, 312)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(59, 59, 59)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(114, 114, 114)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btCalcioMagnesio, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btFosforo, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(100, 100, 100)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btPotassio, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btValoresIdeais, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        rtFundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\gabri\\OneDrive\\Documentos\\UTFPR\\2021 - semestre 2\\Arquitetura de Software\\GUIsoilcorrection\\GUIsoilcorrection\\src\\main\\java\\gui\\imagens\\fundo.jpg")); // NOI18N
+        rtFundo.setPreferredSize(new java.awt.Dimension(1024, 768));
+        getContentPane().add(rtFundo);
+        rtFundo.setBounds(0, 0, 1030, 770);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btFosforoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btFosforoActionPerformed
+        CorrecaoFosforo cf = new CorrecaoFosforo();
+        cf.setVisible(true);
+    }//GEN-LAST:event_btFosforoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -139,10 +135,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btCalcioMagnesio;
     private javax.swing.JButton btFosforo;
     private javax.swing.JButton btPotassio;
     private javax.swing.JButton btValoresIdeais;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel rtFundo;
+    private javax.swing.JLabel rtTitulo;
     // End of variables declaration//GEN-END:variables
 }
