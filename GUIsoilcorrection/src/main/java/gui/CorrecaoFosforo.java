@@ -125,7 +125,7 @@ public class CorrecaoFosforo extends javax.swing.JFrame {
         rtUnidadeEficienciaFosforo.setForeground(new java.awt.Color(0, 0, 0));
         rtUnidadeEficienciaFosforo.setText("(É recomendado uma eficiência entre 70% e 90%)");
         getContentPane().add(rtUnidadeEficienciaFosforo);
-        rtUnidadeEficienciaFosforo.setBounds(583, 374, 260, 16);
+        rtUnidadeEficienciaFosforo.setBounds(583, 374, 300, 16);
 
         rtCusto.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         rtCusto.setForeground(new java.awt.Color(0, 0, 0));
@@ -179,7 +179,7 @@ public class CorrecaoFosforo extends javax.swing.JFrame {
         getContentPane().add(rtCalcio);
         rtCalcio.setBounds(667, 552, 70, 16);
 
-        rtFundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\gabri\\OneDrive\\Documentos\\UTFPR\\2021 - semestre 2\\Arquitetura de Software\\GUIsoilcorrection\\GUIsoilcorrection\\src\\main\\java\\gui\\imagens\\fundo.jpg")); // NOI18N
+        rtFundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\gabri\\OneDrive\\Documentos\\UTFPR\\2021 - semestre 2\\Arquitetura de Software\\GUIsoilcorrection\\GUIsoilcorrection\\src\\main\\java\\gui\\imagens\\fundo3.jpg")); // NOI18N
         getContentPane().add(rtFundo);
         rtFundo.setBounds(0, 0, 1030, 770);
 

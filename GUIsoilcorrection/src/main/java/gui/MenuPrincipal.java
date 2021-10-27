@@ -66,6 +66,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         btPotassio.setForeground(new java.awt.Color(0, 0, 0));
         btPotassio.setText("Correção Potássio");
         btPotassio.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btPotassio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btPotassioActionPerformed(evt);
+            }
+        });
         getContentPane().add(btPotassio);
         btPotassio.setBounds(137, 473, 300, 100);
 
@@ -98,6 +103,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         CorrecaoFosforo cf = new CorrecaoFosforo();
         cf.setVisible(true);
     }//GEN-LAST:event_btFosforoActionPerformed
+
+    private void btPotassioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPotassioActionPerformed
+        CorrecaoPotassio cp = new CorrecaoPotassio();
+        cp.setVisible(true);
+    }//GEN-LAST:event_btPotassioActionPerformed
 
     /**
      * @param args the command line arguments
