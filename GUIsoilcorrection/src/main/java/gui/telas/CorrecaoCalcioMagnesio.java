@@ -63,7 +63,7 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
         rtUnidadeQuantidadeaplicar = new javax.swing.JLabel();
         rtCusto = new javax.swing.JLabel();
         cxCusto = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        rtFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Correção Cálcio Magnésio");
@@ -305,9 +305,9 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
         getContentPane().add(cxCusto);
         cxCusto.setBounds(257, 633, 150, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\gabri\\OneDrive\\Documentos\\UTFPR\\2021 - semestre 2\\Arquitetura de Software\\GUIsoilcorrection\\GUIsoilcorrection\\src\\main\\java\\gui\\imagens\\fundo3.jpg")); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 1090, 780);
+        rtFundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\gabri\\OneDrive\\Documentos\\UTFPR\\2021 - semestre 2\\Arquitetura de Software\\GUIsoilcorrection\\GUIsoilcorrection\\src\\main\\java\\gui\\imagens\\fundo3.jpg")); // NOI18N
+        getContentPane().add(rtFundo);
+        rtFundo.setBounds(0, 0, 1090, 780);
 
         pack();
         setLocationRelativeTo(null);
@@ -362,10 +362,10 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
     private javax.swing.JTextField cxPorcentParticipacao;
     private javax.swing.JTextField cxQuantidadeAplicar;
     private javax.swing.JTextField cxTeorCao;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel rtCalcio;
     private javax.swing.JLabel rtCusto;
     private javax.swing.JLabel rtFonteCorretivo;
+    private javax.swing.JLabel rtFundo;
     private javax.swing.JLabel rtMagnesio;
     private javax.swing.JLabel rtPRNT;
     private javax.swing.JLabel rtParticipacaoAtual;

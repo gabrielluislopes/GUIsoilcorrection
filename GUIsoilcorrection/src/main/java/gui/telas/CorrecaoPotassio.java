@@ -46,7 +46,7 @@ public class CorrecaoPotassio extends javax.swing.JFrame {
         rtUnidadeQuantidadeAplicar = new javax.swing.JLabel();
         rtCusto = new javax.swing.JLabel();
         cxCusto = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        rtFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Correção Potássio");
@@ -182,9 +182,9 @@ public class CorrecaoPotassio extends javax.swing.JFrame {
         getContentPane().add(cxCusto);
         cxCusto.setBounds(609, 508, 150, 30);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\gabri\\OneDrive\\Documentos\\UTFPR\\2021 - semestre 2\\Arquitetura de Software\\GUIsoilcorrection\\GUIsoilcorrection\\src\\main\\java\\gui\\imagens\\fundo3.jpg")); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 1080, 770);
+        rtFundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\gabri\\OneDrive\\Documentos\\UTFPR\\2021 - semestre 2\\Arquitetura de Software\\GUIsoilcorrection\\GUIsoilcorrection\\src\\main\\java\\gui\\imagens\\fundo3.jpg")); // NOI18N
+        getContentPane().add(rtFundo);
+        rtFundo.setBounds(0, 0, 1080, 770);
 
         pack();
         setLocationRelativeTo(null);
@@ -233,9 +233,9 @@ public class CorrecaoPotassio extends javax.swing.JFrame {
     private javax.swing.JTextField cxParticipacaoDesejada;
     private javax.swing.JTextField cxParticipacaoIdeal;
     private javax.swing.JTextField cxQuantidadeAplicar;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel rtCusto;
     private javax.swing.JLabel rtFontePotassio;
+    private javax.swing.JLabel rtFundo;
     private javax.swing.JLabel rtParticipacaoAtual;
     private javax.swing.JLabel rtParticipacaoCorrecao;
     private javax.swing.JLabel rtParticipacaoDesejada;

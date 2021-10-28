@@ -27,7 +27,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         btFosforo = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btCalcioMagnesio = new javax.swing.JButton();
         btPotassio = new javax.swing.JButton();
         btValoresIdeais = new javax.swing.JButton();
         rtTitulo = new javax.swing.JLabel();
@@ -53,19 +53,19 @@ public class MenuPrincipal extends javax.swing.JFrame {
         getContentPane().add(btFosforo);
         btFosforo.setBounds(587, 273, 300, 100);
 
-        jButton1.setBackground(new java.awt.Color(152, 197, 255));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Correção Cálcio e Magnésio");
-        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton1.setPreferredSize(new java.awt.Dimension(300, 100));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btCalcioMagnesio.setBackground(new java.awt.Color(152, 197, 255));
+        btCalcioMagnesio.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btCalcioMagnesio.setForeground(new java.awt.Color(0, 0, 0));
+        btCalcioMagnesio.setText("Correção Cálcio e Magnésio");
+        btCalcioMagnesio.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btCalcioMagnesio.setPreferredSize(new java.awt.Dimension(300, 100));
+        btCalcioMagnesio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btCalcioMagnesioActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(140, 270, 300, 100);
+        getContentPane().add(btCalcioMagnesio);
+        btCalcioMagnesio.setBounds(140, 270, 300, 100);
 
         btPotassio.setBackground(new java.awt.Color(152, 197, 255));
         btPotassio.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -120,10 +120,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
         cp.setVisible(true);
     }//GEN-LAST:event_btPotassioActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btCalcioMagnesioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCalcioMagnesioActionPerformed
         CorrecaoCalcioMagnesio ccm = new CorrecaoCalcioMagnesio();
         ccm.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btCalcioMagnesioActionPerformed
 
     private void btValoresIdeaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btValoresIdeaisActionPerformed
         ValoresIdeais vi = new ValoresIdeais();
@@ -166,10 +166,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btCalcioMagnesio;
     private javax.swing.JButton btFosforo;
     private javax.swing.JButton btPotassio;
     private javax.swing.JButton btValoresIdeais;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel rtFundo;
     private javax.swing.JLabel rtTitulo;
     // End of variables declaration//GEN-END:variables
