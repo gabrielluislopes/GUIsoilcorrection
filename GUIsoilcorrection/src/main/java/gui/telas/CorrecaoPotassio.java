@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package gui;
+package gui.telas;
 
 /**
  *
@@ -50,9 +50,7 @@ public class CorrecaoPotassio extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Correção Potássio");
-        setMaximumSize(new java.awt.Dimension(1024, 768));
         setMinimumSize(new java.awt.Dimension(1024, 768));
-        setPreferredSize(new java.awt.Dimension(1024, 768));
         setResizable(false);
         getContentPane().setLayout(null);
 

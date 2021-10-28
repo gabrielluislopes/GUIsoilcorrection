@@ -4,6 +4,8 @@
  */
 package gui;
 
+import gui.telas.MenuPrincipal;
+
 /**
  *
  * @author gabri

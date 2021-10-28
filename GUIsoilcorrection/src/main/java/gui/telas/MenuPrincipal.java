@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package gui;
+package gui.telas;
 
 /**
  *
@@ -36,9 +36,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Correção de Solo");
         setForeground(new java.awt.Color(0, 0, 0));
-        setMaximumSize(new java.awt.Dimension(1024, 768));
         setMinimumSize(new java.awt.Dimension(1024, 768));
-        setPreferredSize(new java.awt.Dimension(1024, 768));
         setResizable(false);
         getContentPane().setLayout(null);
 
@@ -87,6 +85,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         btValoresIdeais.setForeground(new java.awt.Color(0, 0, 0));
         btValoresIdeais.setText("Valores Ideais");
         btValoresIdeais.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btValoresIdeais.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btValoresIdeaisActionPerformed(evt);
+            }
+        });
         getContentPane().add(btValoresIdeais);
         btValoresIdeais.setBounds(587, 473, 300, 100);
 
@@ -121,6 +124,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         CorrecaoCalcioMagnesio ccm = new CorrecaoCalcioMagnesio();
         ccm.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btValoresIdeaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btValoresIdeaisActionPerformed
+        ValoresIdeais vi = new ValoresIdeais();
+        vi.setVisible(true);
+    }//GEN-LAST:event_btValoresIdeaisActionPerformed
 
     /**
      * @param args the command line arguments
