@@ -291,12 +291,28 @@ public class CorrecaoPotassio extends javax.swing.JFrame {
     public String enviar(String desejado, String fonte) {
         cxParticipacaoDesejada.setText(desejado);
         cbFontePotassio.setSelectedItem(fonte);
-        cxParticipacaoAtual.setText("1.2");
-        cxParticipacaoCorrecao.setText("10,0");
-        cxQuantidadeAplicar.setText("2168.03");
-        cxCusto.setText("21.68");
         
-        return cxParticipacaoDesejada.getText()+" "+cbFontePotassio.getSelectedItem().toString()+" "+cxParticipacaoAtual.getText()+" "+
-                cxParticipacaoCorrecao.getText()+" "+cxQuantidadeAplicar.getText()+" "+cxCusto.getText();
+        int participacaoDesejada = Integer.parseInt(cxParticipacaoDesejada.getText());
+        switch (cbFontePotassio.getSelectedItem().toString()){
+            case "Cloreto de Potássio":
+                participacaoDesejada=participacaoDesejada*2;
+                break;
+            case "Sulfato de Potássio":
+                participacaoDesejada=participacaoDesejada*5;
+                break;
+            case "Sulfato Potássio/Magnésio":
+                participacaoDesejada=participacaoDesejada*11;
+                break;
+            default:
+                participacaoDesejada=0;
+                break;
+        }
+        cxParticipacaoAtual.setText(Integer.toString(participacaoDesejada));
+        cxParticipacaoCorrecao.setText(Integer.toString(participacaoDesejada));
+        cxQuantidadeAplicar.setText(Integer.toString(participacaoDesejada));
+        cxCusto.setText(Integer.toString(participacaoDesejada));
+        
+        return cxParticipacaoAtual.getText()+" "+cxParticipacaoCorrecao.getText()+" "+
+                cxQuantidadeAplicar.getText()+" "+cxCusto.getText();
     }
 }

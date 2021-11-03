@@ -19,8 +19,8 @@ public class CorrecaoPotassioTest {
     @Test
     public void testEnviar(){
         var cp = new CorrecaoPotassio();
-        String enviado = cp.enviar("10", "Cloreto de Potássio");
-        assertEquals("10 Cloreto de Potássio 1.2 10,0 2168.03 21.68", enviado);
+        String enviado = cp.enviar("10", "Sulfato Potássio/Magnésio");
+        assertEquals("110 110 110 110", enviado);
     }
     
 }
