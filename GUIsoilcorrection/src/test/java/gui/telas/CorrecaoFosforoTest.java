@@ -19,8 +19,8 @@ public class CorrecaoFosforoTest {
     @Test
     public void testEnviar() {
         var cf = new CorrecaoFosforo();
-        String enviado = cf.enviar("10", "Superfosfato Simples", "70");
-        assertEquals("10 Superfosfato Simples 70 51.25 0.51 5.1 14.4", enviado);
+        String enviado = cf.enviar("10", "Superfosfato Simples", "50");
+        assertEquals("500 20 5 3", enviado);
     }
     
 }

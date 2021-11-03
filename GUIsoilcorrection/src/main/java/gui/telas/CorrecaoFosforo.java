@@ -295,12 +295,33 @@ public class CorrecaoFosforo extends javax.swing.JFrame {
         cxTeorFosforo.setText(teor);
         cbFonteFosforo.setSelectedItem(fonte);
         cxEficienciaFosforo.setText(eficiencia);
-        cxQuantidadeAplicada.setText("51.25");
-        cxCusto.setText("0.51");
-        cxEnxofre.setText("5.1");
-        cxCalcio.setText("14.4");
         
-        return cxTeorFosforo.getText()+" "+cbFonteFosforo.getSelectedItem().toString()+" "+cxEficienciaFosforo.getText()+" "+
-                cxQuantidadeAplicada.getText()+" "+cxCusto.getText()+" "+cxEnxofre.getText()+" "+cxCalcio.getText();
+        
+        int quantidadeAplicada = Integer.parseInt(teor)* Integer.parseInt(eficiencia);
+        int custo = Integer.parseInt(teor);
+        switch (cbFonteFosforo.getSelectedItem().toString()){
+            case "Superfosfato Simples":
+                custo = custo * 2;
+                break;
+            case "Superfosfato Triplo":
+                custo = custo * 3;
+                break;
+            case "MAP":
+                custo = custo * 4;
+                break;
+            default:
+                custo = 0;
+                break;
+        }
+        cxQuantidadeAplicada.setText(Integer.toString(quantidadeAplicada));
+        cxCusto.setText(Integer.toString(custo));
+        int enxofre = Integer.parseInt(teor) / 2;
+        cxEnxofre.setText(Integer.toString(enxofre));
+        int calcio = Integer.parseInt(teor) / 3;
+        cxCalcio.setText(Integer.toString(calcio));
+        
+        
+        return quantidadeAplicada+" "+custo+" "+enxofre+" "+calcio;
+        
     }
 }
