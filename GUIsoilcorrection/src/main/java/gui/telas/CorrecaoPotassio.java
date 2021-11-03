@@ -4,6 +4,8 @@
  */
 package gui.telas;
 
+import static java.awt.event.KeyEvent.VK_ENTER;
+
 /**
  *
  * @author gabri
@@ -46,6 +48,7 @@ public class CorrecaoPotassio extends javax.swing.JFrame {
         rtUnidadeQuantidadeAplicar = new javax.swing.JLabel();
         rtCusto = new javax.swing.JLabel();
         cxCusto = new javax.swing.JTextField();
+        btEnviar = new javax.swing.JButton();
         rtFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -182,6 +185,25 @@ public class CorrecaoPotassio extends javax.swing.JFrame {
         getContentPane().add(cxCusto);
         cxCusto.setBounds(609, 508, 150, 30);
 
+        btEnviar.setBackground(new java.awt.Color(255, 255, 255));
+        btEnviar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        btEnviar.setForeground(new java.awt.Color(0, 0, 0));
+        btEnviar.setText("Enviar");
+        btEnviar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btEnviar.setPreferredSize(new java.awt.Dimension(84, 42));
+        btEnviar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btEnviarActionPerformed(evt);
+            }
+        });
+        btEnviar.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                btEnviarKeyPressed(evt);
+            }
+        });
+        getContentPane().add(btEnviar);
+        btEnviar.setBounds(470, 616, 160, 50);
+
         rtFundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\gabri\\OneDrive\\Documentos\\UTFPR\\2021 - semestre 2\\Arquitetura de Software\\GUIsoilcorrection\\GUIsoilcorrection\\src\\main\\java\\gui\\imagens\\fundo3.jpg")); // NOI18N
         getContentPane().add(rtFundo);
         rtFundo.setBounds(0, 0, 1080, 770);
@@ -189,6 +211,22 @@ public class CorrecaoPotassio extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEnviarActionPerformed
+        String desejada = cxParticipacaoDesejada.getText();
+        String fonte = cbFontePotassio.getSelectedItem().toString();
+        
+        enviar(desejada, fonte);
+    }//GEN-LAST:event_btEnviarActionPerformed
+
+    private void btEnviarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btEnviarKeyPressed
+        String desejada = cxParticipacaoDesejada.getText();
+        String fonte = cbFontePotassio.getSelectedItem().toString();
+        
+        if(evt.getKeyCode() == VK_ENTER){
+            enviar(desejada, fonte);
+        }
+    }//GEN-LAST:event_btEnviarKeyPressed
 
     /**
      * @param args the command line arguments
@@ -226,6 +264,7 @@ public class CorrecaoPotassio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btEnviar;
     private javax.swing.JComboBox<String> cbFontePotassio;
     private javax.swing.JTextField cxCusto;
     private javax.swing.JTextField cxParticipacaoAtual;
@@ -248,4 +287,16 @@ public class CorrecaoPotassio extends javax.swing.JFrame {
     private javax.swing.JLabel rtUnidadeParticipacaodesejada;
     private javax.swing.JLabel rtUnidadeQuantidadeAplicar;
     // End of variables declaration//GEN-END:variables
+
+    public String enviar(String desejado, String fonte) {
+        cxParticipacaoDesejada.setText(desejado);
+        cbFontePotassio.setSelectedItem(fonte);
+        cxParticipacaoAtual.setText("1.2");
+        cxParticipacaoCorrecao.setText("10,0");
+        cxQuantidadeAplicar.setText("2168.03");
+        cxCusto.setText("21.68");
+        
+        return cxParticipacaoDesejada.getText()+" "+cbFontePotassio.getSelectedItem().toString()+" "+cxParticipacaoAtual.getText()+" "+
+                cxParticipacaoCorrecao.getText()+" "+cxQuantidadeAplicar.getText()+" "+cxCusto.getText();
+    }
 }

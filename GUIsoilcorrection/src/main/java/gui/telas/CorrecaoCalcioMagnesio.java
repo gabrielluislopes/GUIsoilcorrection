@@ -4,6 +4,8 @@
  */
 package gui.telas;
 
+import static java.awt.event.KeyEvent.VK_ENTER;
+
 /**
  *
  * @author gabri
@@ -63,6 +65,7 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
         rtUnidadeQuantidadeaplicar = new javax.swing.JLabel();
         rtCusto = new javax.swing.JLabel();
         cxCusto = new javax.swing.JTextField();
+        btEnviar = new javax.swing.JButton();
         rtFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -305,6 +308,25 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
         getContentPane().add(cxCusto);
         cxCusto.setBounds(257, 633, 150, 30);
 
+        btEnviar.setBackground(new java.awt.Color(255, 255, 255));
+        btEnviar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        btEnviar.setForeground(new java.awt.Color(0, 0, 0));
+        btEnviar.setText("Enviar");
+        btEnviar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btEnviar.setPreferredSize(new java.awt.Dimension(84, 42));
+        btEnviar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btEnviarActionPerformed(evt);
+            }
+        });
+        btEnviar.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                btEnviarKeyPressed(evt);
+            }
+        });
+        getContentPane().add(btEnviar);
+        btEnviar.setBounds(705, 575, 160, 50);
+
         rtFundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\gabri\\OneDrive\\Documentos\\UTFPR\\2021 - semestre 2\\Arquitetura de Software\\GUIsoilcorrection\\GUIsoilcorrection\\src\\main\\java\\gui\\imagens\\fundo3.jpg")); // NOI18N
         getContentPane().add(rtFundo);
         rtFundo.setBounds(0, 0, 1090, 780);
@@ -312,6 +334,26 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEnviarActionPerformed
+        String desejada = cxPorcentParticipacao.getText();
+        String fonte = cbFonteCorretivo.getSelectedItem().toString();
+        String prnt = cxPRNT.getText();
+        String teorCao = cxTeorCao.getText();
+        
+        enviar(desejada, fonte, prnt, teorCao);
+    }//GEN-LAST:event_btEnviarActionPerformed
+
+    private void btEnviarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btEnviarKeyPressed
+        String desejada = cxPorcentParticipacao.getText();
+        String fonte = cbFonteCorretivo.getSelectedItem().toString();
+        String prnt = cxPRNT.getText();
+        String teorCao = cxTeorCao.getText();
+        
+        if(evt.getKeyCode() == VK_ENTER){
+            enviar(desejada, fonte, prnt, teorCao);
+        }
+    }//GEN-LAST:event_btEnviarKeyPressed
 
     /**
      * @param args the command line arguments
@@ -350,6 +392,7 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btEnviar;
     private javax.swing.JComboBox<String> cbFonteCorretivo;
     private javax.swing.JTextField cxCusto;
     private javax.swing.JTextField cxPRNT;
@@ -389,4 +432,22 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
     private javax.swing.JLabel rtUnidadeQuantidadeaplicar;
     private javax.swing.JLabel rtUnidadeTeorCao;
     // End of variables declaration//GEN-END:variables
+
+    public String enviar(String desejado, String fonte, String prnt, String teorCao) {
+        cxPorcentParticipacao.setText(desejado);
+        cbFonteCorretivo.setSelectedItem(fonte);
+        cxPRNT.setText(prnt);
+        cxTeorCao.setText(teorCao);
+        cxParticipacaoAtual.setText("44.7");
+        cxParticipacaoCorrecao.setText("44.7");
+        cxParticipacaoAtual1.setText("12.6");
+        cxParticipacaoCorrecao1.setText("12.6");
+        cxQuantidadeAplicar.setText("0.00");
+        cxCusto.setText("0.00");
+        
+        return cxPorcentParticipacao.getText()+" "+cbFonteCorretivo.getSelectedItem().toString()+" "+cxPRNT.getText()+" "+
+                cxTeorCao.getText()+" "+cxParticipacaoAtual.getText()+" "+cxParticipacaoCorrecao.getText()+" "+
+                cxParticipacaoAtual1.getText()+" "+cxParticipacaoCorrecao1.getText()+" "+
+                cxQuantidadeAplicar.getText()+" "+cxCusto.getText();
+    }
 }
