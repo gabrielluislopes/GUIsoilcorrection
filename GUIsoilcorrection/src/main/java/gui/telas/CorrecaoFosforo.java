@@ -4,6 +4,8 @@
  */
 package gui.telas;
 
+import static java.awt.event.KeyEvent.VK_ENTER;
+
 /**
  *
  * @author gabri
@@ -45,6 +47,7 @@ public class CorrecaoFosforo extends javax.swing.JFrame {
         rtEnxofre = new javax.swing.JLabel();
         cxCalcio = new javax.swing.JTextField();
         rtCalcio = new javax.swing.JLabel();
+        btEnviar = new javax.swing.JButton();
         rtFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -180,13 +183,54 @@ public class CorrecaoFosforo extends javax.swing.JFrame {
         getContentPane().add(rtCalcio);
         rtCalcio.setBounds(667, 552, 70, 16);
 
+        btEnviar.setBackground(new java.awt.Color(255, 255, 255));
+        btEnviar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        btEnviar.setForeground(new java.awt.Color(0, 0, 0));
+        btEnviar.setText("Enviar");
+        btEnviar.setPreferredSize(new java.awt.Dimension(84, 42));
+        btEnviar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btEnviarActionPerformed(evt);
+            }
+        });
+        btEnviar.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                btEnviarKeyPressed(evt);
+            }
+        });
+        getContentPane().add(btEnviar);
+        btEnviar.setBounds(470, 616, 160, 50);
+
+        rtFundo.setBackground(new java.awt.Color(255, 255, 255));
+        rtFundo.setForeground(new java.awt.Color(0, 0, 0));
+        rtFundo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         rtFundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\gabri\\OneDrive\\Documentos\\UTFPR\\2021 - semestre 2\\Arquitetura de Software\\GUIsoilcorrection\\GUIsoilcorrection\\src\\main\\java\\gui\\imagens\\fundo3.jpg")); // NOI18N
+        rtFundo.setText("Enviar");
+        rtFundo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(rtFundo);
-        rtFundo.setBounds(0, 0, 1030, 770);
+        rtFundo.setBounds(-10, -10, 1040, 780);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEnviarActionPerformed
+        String teor = cxTeorFosforo.getText();
+        String fonte = cbFonteFosforo.getSelectedItem().toString();
+        String eficiencia = cxEficienciaFosforo.getText();
+        
+        
+        enviar(teor, fonte, eficiencia);
+    }//GEN-LAST:event_btEnviarActionPerformed
+
+    private void btEnviarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btEnviarKeyPressed
+        String teor = cxTeorFosforo.getText();
+        String fonte = cbFonteFosforo.getSelectedItem().toString();
+        String eficiencia = cxEficienciaFosforo.getText();
+        if(evt.getKeyCode() == VK_ENTER){
+            enviar(teor, fonte, eficiencia);
+        }
+    }//GEN-LAST:event_btEnviarKeyPressed
 
     /**
      * @param args the command line arguments
@@ -224,6 +268,7 @@ public class CorrecaoFosforo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btEnviar;
     private javax.swing.JComboBox<String> cbFonteFosforo;
     private javax.swing.JTextField cxCalcio;
     private javax.swing.JTextField cxCusto;
@@ -245,4 +290,17 @@ public class CorrecaoFosforo extends javax.swing.JFrame {
     private javax.swing.JLabel rtUnidadeQuantidadeAplicada;
     private javax.swing.JLabel rtUnidadeTeorFosforo;
     // End of variables declaration//GEN-END:variables
+
+    public String enviar(String teor, String fonte, String eficiencia) {
+        cxTeorFosforo.setText(teor);
+        cbFonteFosforo.setSelectedItem(fonte);
+        cxEficienciaFosforo.setText(eficiencia);
+        cxQuantidadeAplicada.setText("51.25");
+        cxCusto.setText("0.51");
+        cxEnxofre.setText("5.1");
+        cxCalcio.setText("14.4");
+        
+        return cxTeorFosforo.getText()+" "+cbFonteFosforo.getSelectedItem().toString()+" "+cxEficienciaFosforo.getText()+" "+
+                cxQuantidadeAplicada.getText()+" "+cxCusto.getText()+" "+cxEnxofre.getText()+" "+cxCalcio.getText();
+    }
 }
