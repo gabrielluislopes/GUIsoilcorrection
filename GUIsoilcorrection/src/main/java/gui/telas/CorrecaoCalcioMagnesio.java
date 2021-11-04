@@ -95,6 +95,7 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
         rtParticipacaoAtual.setBounds(125, 145, 268, 25);
 
         cxParticipacaoAtual.setEditable(false);
+        cxParticipacaoAtual.setBackground(new java.awt.Color(153, 153, 153));
         cxParticipacaoAtual.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cxParticipacaoAtual.setForeground(new java.awt.Color(0, 0, 0));
         cxParticipacaoAtual.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -114,6 +115,7 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
         rtParticipacaoIdeal.setBounds(125, 380, 42, 25);
 
         cxParticipacaoIdeal.setEditable(false);
+        cxParticipacaoIdeal.setBackground(new java.awt.Color(153, 153, 153));
         cxParticipacaoIdeal.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cxParticipacaoIdeal.setForeground(new java.awt.Color(0, 0, 0));
         cxParticipacaoIdeal.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -134,6 +136,7 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
         rtParticipacaoCorrecao.setBounds(411, 193, 145, 25);
 
         cxParticipacaoCorrecao.setEditable(false);
+        cxParticipacaoCorrecao.setBackground(new java.awt.Color(153, 153, 153));
         cxParticipacaoCorrecao.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cxParticipacaoCorrecao.setForeground(new java.awt.Color(0, 0, 0));
         cxParticipacaoCorrecao.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -177,6 +180,7 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
         rtParticipacaoAtual1.setBounds(125, 332, 268, 25);
 
         cxParticipacaoAtual1.setEditable(false);
+        cxParticipacaoAtual1.setBackground(new java.awt.Color(153, 153, 153));
         cxParticipacaoAtual1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cxParticipacaoAtual1.setForeground(new java.awt.Color(0, 0, 0));
         cxParticipacaoAtual1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -196,6 +200,7 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
         rtParticipacaoIdeal1.setBounds(125, 193, 42, 25);
 
         cxParticipacaoIdeal1.setEditable(false);
+        cxParticipacaoIdeal1.setBackground(new java.awt.Color(153, 153, 153));
         cxParticipacaoIdeal1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cxParticipacaoIdeal1.setForeground(new java.awt.Color(0, 0, 0));
         cxParticipacaoIdeal1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -216,6 +221,7 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
         rtParticipacaoCorrecao1.setBounds(411, 380, 145, 25);
 
         cxParticipacaoCorrecao1.setEditable(false);
+        cxParticipacaoCorrecao1.setBackground(new java.awt.Color(153, 153, 153));
         cxParticipacaoCorrecao1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cxParticipacaoCorrecao1.setForeground(new java.awt.Color(0, 0, 0));
         cxParticipacaoCorrecao1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -283,6 +289,7 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
         rtQuantidadeAplicar.setBounds(125, 588, 167, 25);
 
         cxQuantidadeAplicar.setEditable(false);
+        cxQuantidadeAplicar.setBackground(new java.awt.Color(153, 153, 153));
         cxQuantidadeAplicar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cxQuantidadeAplicar.setForeground(new java.awt.Color(0, 0, 0));
         cxQuantidadeAplicar.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -302,6 +309,7 @@ public class CorrecaoCalcioMagnesio extends javax.swing.JFrame {
         rtCusto.setBounds(125, 636, 114, 25);
 
         cxCusto.setEditable(false);
+        cxCusto.setBackground(new java.awt.Color(153, 153, 153));
         cxCusto.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cxCusto.setForeground(new java.awt.Color(0, 0, 0));
         cxCusto.setHorizontalAlignment(javax.swing.JTextField.CENTER);

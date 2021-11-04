@@ -4,7 +4,7 @@
  */
 package gui;
 
-import gui.telas.MenuPrincipal;
+import gui.telas.InformacoesUsuario;
 
 /**
  *
@@ -13,8 +13,8 @@ import gui.telas.MenuPrincipal;
 public class Index {
     
     public static void main(String args[]){
-        MenuPrincipal mp = new MenuPrincipal();
-        mp.setVisible(true);
+        InformacoesUsuario iu = new InformacoesUsuario();
+        iu.setVisible(true);
     }
     
 }

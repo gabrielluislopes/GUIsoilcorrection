@@ -102,6 +102,7 @@ public class CorrecaoFosforo extends javax.swing.JFrame {
         rtQuantidadeAplicada.setBounds(181, 319, 214, 25);
 
         cxQuantidadeAplicada.setEditable(false);
+        cxQuantidadeAplicada.setBackground(new java.awt.Color(153, 153, 153));
         cxQuantidadeAplicada.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cxQuantidadeAplicada.setForeground(new java.awt.Color(0, 0, 0));
         cxQuantidadeAplicada.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -138,6 +139,7 @@ public class CorrecaoFosforo extends javax.swing.JFrame {
         rtCusto.setBounds(181, 415, 124, 25);
 
         cxCusto.setEditable(false);
+        cxCusto.setBackground(new java.awt.Color(153, 153, 153));
         cxCusto.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cxCusto.setForeground(new java.awt.Color(0, 0, 0));
         cxCusto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -152,6 +154,7 @@ public class CorrecaoFosforo extends javax.swing.JFrame {
         rtCorrecao.setBounds(287, 502, 450, 25);
 
         cxEnxofre.setEditable(false);
+        cxEnxofre.setBackground(new java.awt.Color(153, 153, 153));
         cxEnxofre.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         cxEnxofre.setForeground(new java.awt.Color(0, 0, 0));
         cxEnxofre.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -168,6 +171,7 @@ public class CorrecaoFosforo extends javax.swing.JFrame {
         rtEnxofre.setBounds(375, 550, 70, 20);
 
         cxCalcio.setEditable(false);
+        cxCalcio.setBackground(new java.awt.Color(153, 153, 153));
         cxCalcio.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         cxCalcio.setForeground(new java.awt.Color(0, 0, 0));
         cxCalcio.setHorizontalAlignment(javax.swing.JTextField.CENTER);

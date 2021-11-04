@@ -72,6 +72,7 @@ public class CorrecaoPotassio extends javax.swing.JFrame {
         rtParticipacaoAtual.setBounds(190, 223, 389, 25);
 
         cxParticipacaoAtual.setEditable(false);
+        cxParticipacaoAtual.setBackground(new java.awt.Color(153, 153, 153));
         cxParticipacaoAtual.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cxParticipacaoAtual.setForeground(new java.awt.Color(0, 0, 0));
         cxParticipacaoAtual.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -109,6 +110,7 @@ public class CorrecaoPotassio extends javax.swing.JFrame {
         rtParticipacaoCorrecao.setBounds(190, 319, 401, 25);
 
         cxParticipacaoCorrecao.setEditable(false);
+        cxParticipacaoCorrecao.setBackground(new java.awt.Color(153, 153, 153));
         cxParticipacaoCorrecao.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cxParticipacaoCorrecao.setForeground(new java.awt.Color(0, 0, 0));
         cxParticipacaoCorrecao.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -128,6 +130,7 @@ public class CorrecaoPotassio extends javax.swing.JFrame {
         rtParticipacaoIdeal.setBounds(190, 367, 322, 25);
 
         cxParticipacaoIdeal.setEditable(false);
+        cxParticipacaoIdeal.setBackground(new java.awt.Color(153, 153, 153));
         cxParticipacaoIdeal.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         cxParticipacaoIdeal.setForeground(new java.awt.Color(0, 0, 0));
         cxParticipacaoIdeal.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -160,6 +163,7 @@ public class CorrecaoPotassio extends javax.swing.JFrame {
         rtQuantidadeAplicar.setBounds(190, 463, 167, 25);
 
         cxQuantidadeAplicar.setEditable(false);
+        cxQuantidadeAplicar.setBackground(new java.awt.Color(153, 153, 153));
         cxQuantidadeAplicar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cxQuantidadeAplicar.setForeground(new java.awt.Color(0, 0, 0));
         cxQuantidadeAplicar.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -179,6 +183,7 @@ public class CorrecaoPotassio extends javax.swing.JFrame {
         rtCusto.setBounds(190, 511, 110, 25);
 
         cxCusto.setEditable(false);
+        cxCusto.setBackground(new java.awt.Color(153, 153, 153));
         cxCusto.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cxCusto.setForeground(new java.awt.Color(0, 0, 0));
         cxCusto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
