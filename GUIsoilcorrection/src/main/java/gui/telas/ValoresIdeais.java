@@ -64,16 +64,16 @@ public class ValoresIdeais extends javax.swing.JFrame {
         rtEnxofreSolo = new javax.swing.JLabel();
         cxEnxofreSolo = new javax.swing.JTextField();
         rtEnxofreIdeal = new javax.swing.JLabel();
-        cxEnxofreideal = new javax.swing.JTextField();
+        cxEnxofreIdeal = new javax.swing.JTextField();
         rtEnxofreCorrecao = new javax.swing.JLabel();
         cxEnxofreCorrecao = new javax.swing.JTextField();
         rtAluminio = new javax.swing.JLabel();
-        rtEnxofreSolo1 = new javax.swing.JLabel();
-        cxEnxofreSolo1 = new javax.swing.JTextField();
-        rtEnxofreIdeal1 = new javax.swing.JLabel();
-        cxEnxofreideal1 = new javax.swing.JTextField();
-        rtEnxofreCorrecao1 = new javax.swing.JLabel();
-        cxEnxofreCorrecao1 = new javax.swing.JTextField();
+        rtAluminioSolo = new javax.swing.JLabel();
+        cxAluminioSolo = new javax.swing.JTextField();
+        rtAluminioIdeal = new javax.swing.JLabel();
+        cxAluminioIdeal = new javax.swing.JTextField();
+        rtAluminioCorrecao = new javax.swing.JLabel();
+        cxAluminioCorrecao = new javax.swing.JTextField();
         rtHAL = new javax.swing.JLabel();
         rtHALSolo = new javax.swing.JLabel();
         cxHALSolo = new javax.swing.JTextField();
@@ -81,6 +81,7 @@ public class ValoresIdeais extends javax.swing.JFrame {
         cxHALIdeal = new javax.swing.JTextField();
         rtHALCorrecao = new javax.swing.JLabel();
         cxHALCorrecao = new javax.swing.JTextField();
+        btEnviar = new javax.swing.JButton();
         rtFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -329,12 +330,12 @@ public class ValoresIdeais extends javax.swing.JFrame {
         getContentPane().add(rtEnxofreIdeal);
         rtEnxofreIdeal.setBounds(373, 439, 32, 20);
 
-        cxEnxofreideal.setEditable(false);
-        cxEnxofreideal.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        cxEnxofreideal.setForeground(new java.awt.Color(0, 0, 0));
-        cxEnxofreideal.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        getContentPane().add(cxEnxofreideal);
-        cxEnxofreideal.setBounds(423, 434, 150, 30);
+        cxEnxofreIdeal.setEditable(false);
+        cxEnxofreIdeal.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        cxEnxofreIdeal.setForeground(new java.awt.Color(0, 0, 0));
+        cxEnxofreIdeal.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        getContentPane().add(cxEnxofreIdeal);
+        cxEnxofreIdeal.setBounds(423, 434, 150, 30);
 
         rtEnxofreCorrecao.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         rtEnxofreCorrecao.setForeground(new java.awt.Color(0, 0, 0));
@@ -355,43 +356,43 @@ public class ValoresIdeais extends javax.swing.JFrame {
         getContentPane().add(rtAluminio);
         rtAluminio.setBounds(120, 482, 77, 25);
 
-        rtEnxofreSolo1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        rtEnxofreSolo1.setForeground(new java.awt.Color(0, 0, 0));
-        rtEnxofreSolo1.setText("No solo:");
-        getContentPane().add(rtEnxofreSolo1);
-        rtEnxofreSolo1.setBounds(120, 518, 50, 20);
+        rtAluminioSolo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        rtAluminioSolo.setForeground(new java.awt.Color(0, 0, 0));
+        rtAluminioSolo.setText("No solo:");
+        getContentPane().add(rtAluminioSolo);
+        rtAluminioSolo.setBounds(120, 518, 50, 20);
 
-        cxEnxofreSolo1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        cxEnxofreSolo1.setForeground(new java.awt.Color(0, 0, 0));
-        cxEnxofreSolo1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        getContentPane().add(cxEnxofreSolo1);
-        cxEnxofreSolo1.setBounds(205, 513, 150, 30);
+        cxAluminioSolo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        cxAluminioSolo.setForeground(new java.awt.Color(0, 0, 0));
+        cxAluminioSolo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        getContentPane().add(cxAluminioSolo);
+        cxAluminioSolo.setBounds(205, 513, 150, 30);
 
-        rtEnxofreIdeal1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        rtEnxofreIdeal1.setForeground(new java.awt.Color(0, 0, 0));
-        rtEnxofreIdeal1.setText("Ideal:");
-        getContentPane().add(rtEnxofreIdeal1);
-        rtEnxofreIdeal1.setBounds(373, 518, 32, 20);
+        rtAluminioIdeal.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        rtAluminioIdeal.setForeground(new java.awt.Color(0, 0, 0));
+        rtAluminioIdeal.setText("Ideal:");
+        getContentPane().add(rtAluminioIdeal);
+        rtAluminioIdeal.setBounds(373, 518, 32, 20);
 
-        cxEnxofreideal1.setEditable(false);
-        cxEnxofreideal1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        cxEnxofreideal1.setForeground(new java.awt.Color(0, 0, 0));
-        cxEnxofreideal1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        getContentPane().add(cxEnxofreideal1);
-        cxEnxofreideal1.setBounds(423, 513, 150, 30);
+        cxAluminioIdeal.setEditable(false);
+        cxAluminioIdeal.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        cxAluminioIdeal.setForeground(new java.awt.Color(0, 0, 0));
+        cxAluminioIdeal.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        getContentPane().add(cxAluminioIdeal);
+        cxAluminioIdeal.setBounds(423, 513, 150, 30);
 
-        rtEnxofreCorrecao1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        rtEnxofreCorrecao1.setForeground(new java.awt.Color(0, 0, 0));
-        rtEnxofreCorrecao1.setText("Após correções:");
-        getContentPane().add(rtEnxofreCorrecao1);
-        rtEnxofreCorrecao1.setBounds(591, 518, 96, 20);
+        rtAluminioCorrecao.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        rtAluminioCorrecao.setForeground(new java.awt.Color(0, 0, 0));
+        rtAluminioCorrecao.setText("Após correções:");
+        getContentPane().add(rtAluminioCorrecao);
+        rtAluminioCorrecao.setBounds(591, 518, 96, 20);
 
-        cxEnxofreCorrecao1.setEditable(false);
-        cxEnxofreCorrecao1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        cxEnxofreCorrecao1.setForeground(new java.awt.Color(0, 0, 0));
-        cxEnxofreCorrecao1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        getContentPane().add(cxEnxofreCorrecao1);
-        cxEnxofreCorrecao1.setBounds(705, 513, 150, 30);
+        cxAluminioCorrecao.setEditable(false);
+        cxAluminioCorrecao.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        cxAluminioCorrecao.setForeground(new java.awt.Color(0, 0, 0));
+        cxAluminioCorrecao.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        getContentPane().add(cxAluminioCorrecao);
+        cxAluminioCorrecao.setBounds(705, 513, 150, 30);
 
         rtHAL.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         rtHAL.setForeground(new java.awt.Color(0, 0, 0));
@@ -437,6 +438,25 @@ public class ValoresIdeais extends javax.swing.JFrame {
         getContentPane().add(cxHALCorrecao);
         cxHALCorrecao.setBounds(705, 592, 150, 30);
 
+        btEnviar.setBackground(new java.awt.Color(255, 255, 255));
+        btEnviar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        btEnviar.setForeground(new java.awt.Color(0, 0, 0));
+        btEnviar.setText("Enviar");
+        btEnviar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btEnviar.setPreferredSize(new java.awt.Dimension(84, 42));
+        btEnviar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btEnviarActionPerformed(evt);
+            }
+        });
+        btEnviar.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                btEnviarKeyPressed(evt);
+            }
+        });
+        getContentPane().add(btEnviar);
+        btEnviar.setBounds(423, 640, 160, 50);
+
         rtFundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\gabri\\OneDrive\\Documentos\\UTFPR\\2021 - semestre 2\\Arquitetura de Software\\GUIsoilcorrection\\GUIsoilcorrection\\src\\main\\java\\gui\\imagens\\fundo3.jpg")); // NOI18N
         getContentPane().add(rtFundo);
         rtFundo.setBounds(0, 0, 1030, 780);
@@ -444,6 +464,22 @@ public class ValoresIdeais extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEnviarActionPerformed
+        String fosforo = cxFosforoSolo.getText();
+        String potassio = cxPotassioSolo.getText();
+        String calcio = cxCalcioSolo.getText();
+        String magnesio = cxMagnesioSolo.getText();
+        String enxofre = cxEnxofreSolo.getText();
+        String aluminio = cxAluminioSolo.getText();
+        String hal = cxHALSolo.getText();
+        
+        enviar(fosforo, potassio, calcio, magnesio, enxofre, aluminio, hal);
+    }//GEN-LAST:event_btEnviarActionPerformed
+
+    private void btEnviarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btEnviarKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btEnviarKeyPressed
 
     /**
      * @param args the command line arguments
@@ -481,15 +517,16 @@ public class ValoresIdeais extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btEnviar;
+    private javax.swing.JTextField cxAluminioCorrecao;
+    private javax.swing.JTextField cxAluminioIdeal;
+    private javax.swing.JTextField cxAluminioSolo;
     private javax.swing.JTextField cxCalcioCorrecao;
     private javax.swing.JTextField cxCalcioIdeal;
     private javax.swing.JTextField cxCalcioSolo;
     private javax.swing.JTextField cxEnxofreCorrecao;
-    private javax.swing.JTextField cxEnxofreCorrecao1;
+    private javax.swing.JTextField cxEnxofreIdeal;
     private javax.swing.JTextField cxEnxofreSolo;
-    private javax.swing.JTextField cxEnxofreSolo1;
-    private javax.swing.JTextField cxEnxofreideal;
-    private javax.swing.JTextField cxEnxofreideal1;
     private javax.swing.JTextField cxFosforoCorrecao;
     private javax.swing.JTextField cxFosforoIdeal;
     private javax.swing.JTextField cxFosforoSolo;
@@ -503,17 +540,17 @@ public class ValoresIdeais extends javax.swing.JFrame {
     private javax.swing.JTextField cxPotassioIdeal;
     private javax.swing.JTextField cxPotassioSolo;
     private javax.swing.JLabel rtAluminio;
+    private javax.swing.JLabel rtAluminioCorrecao;
+    private javax.swing.JLabel rtAluminioIdeal;
+    private javax.swing.JLabel rtAluminioSolo;
     private javax.swing.JLabel rtCalcio;
     private javax.swing.JLabel rtCalcioCorrecao;
     private javax.swing.JLabel rtCalcioIdeal;
     private javax.swing.JLabel rtCalcioSolo;
     private javax.swing.JLabel rtEnxofre;
     private javax.swing.JLabel rtEnxofreCorrecao;
-    private javax.swing.JLabel rtEnxofreCorrecao1;
     private javax.swing.JLabel rtEnxofreIdeal;
-    private javax.swing.JLabel rtEnxofreIdeal1;
     private javax.swing.JLabel rtEnxofreSolo;
-    private javax.swing.JLabel rtEnxofreSolo1;
     private javax.swing.JLabel rtFosforo;
     private javax.swing.JLabel rtFosforoCorrecao;
     private javax.swing.JLabel rtFosforoIdeal;
@@ -538,4 +575,45 @@ public class ValoresIdeais extends javax.swing.JFrame {
     private javax.swing.JLabel rtUnidadeMagnesio;
     private javax.swing.JLabel rtUnidadePotassio;
     // End of variables declaration//GEN-END:variables
+
+    public String enviar(String fosforo, String potassio, String calcio, String magnesio, String enxofre, String aluminio, String hal) {
+        cxFosforoSolo.setText(fosforo);
+        cxPotassioSolo.setText(potassio);
+        cxCalcioSolo.setText(calcio);
+        cxMagnesioSolo.setText(magnesio);
+        cxEnxofreSolo.setText(enxofre);
+        cxAluminioSolo.setText(aluminio);
+        cxHALSolo.setText(hal);
+        
+        int fos = Integer.parseInt(fosforo) * 1; 
+        int pot = Integer.parseInt(potassio) * 2;
+        int cal = Integer.parseInt(calcio) * 3;
+        int mag = Integer.parseInt(magnesio) * 4;
+        int enx = Integer.parseInt(enxofre) * 5;
+        int alu = Integer.parseInt(aluminio) * 6;
+        int h = Integer.parseInt(hal) * 7;
+        
+        cxFosforoIdeal.setText(Integer.toString(fos));
+        cxFosforoCorrecao.setText(Integer.toString(fos));
+        cxPotassioIdeal.setText(Integer.toString(pot));
+        cxPotassioCorrecao.setText(Integer.toString(pot));
+        cxCalcioIdeal.setText(Integer.toString(cal));
+        cxCalcioCorrecao.setText(Integer.toString(cal));
+        cxMagnesioIdeal.setText(Integer.toString(mag));
+        cxMagnesioCorrecao.setText(Integer.toString(mag));
+        cxEnxofreIdeal.setText(Integer.toString(enx));
+        cxEnxofreCorrecao.setText(Integer.toString(enx));
+        cxAluminioIdeal.setText(Integer.toString(alu));
+        cxAluminioCorrecao.setText(Integer.toString(alu));
+        cxHALIdeal.setText(Integer.toString(h));
+        cxHALCorrecao.setText(Integer.toString(h));
+        
+        return cxFosforoIdeal.getText()+" "+cxFosforoCorrecao.getText()+" "+
+                cxPotassioIdeal.getText()+" "+cxPotassioCorrecao.getText()+" "+
+                cxCalcioIdeal.getText()+" "+cxCalcioCorrecao.getText()+" "+
+                cxMagnesioIdeal.getText()+" "+cxMagnesioCorrecao.getText()+" "+
+                cxEnxofreIdeal.getText()+" "+cxEnxofreCorrecao.getText()+" "+
+                cxAluminioIdeal.getText()+" "+cxAluminioCorrecao.getText()+" "+
+                cxHALIdeal.getText()+" "+cxHALCorrecao.getText();
+    }
 }
